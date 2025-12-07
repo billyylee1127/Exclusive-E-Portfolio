@@ -110,7 +110,7 @@
                 <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
                 <h4 class="modal__subtitle modal__subtitle--contact">I'm currently open to new opportunities.                   
                 </h4>
-                <form id="contact__form" onsubmit="contact()">
+                <form id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
                         <input class="input" name="user_name" type="text"></input>
@@ -208,5 +208,17 @@
             </div>
         </div>
     </footer>
+<script src="https://kit.fontawesome.com/bd208f162b.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init({
+      publicKey: "eeEiaje-L30e4GhrV",
+    });
+  })();
+</script>
+
+<script src="index.js"></script>
 </body>
 </html>
